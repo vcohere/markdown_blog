@@ -1,0 +1,17 @@
+doctype html
+html(lang='fr')
+    head
+        title Valentin Cohéré
+        link(rel='stylesheet' href='/css/style.css')
+    body
+        #container
+            #head
+                .logo
+                    | VC
+                ul.nav
+                    li: a(href='/') Accueil
+                    li: a(href='/blog') Blog
+                    li: a(href='/projects') Projets
+                    li: a(href='/contact') Contact
+            #body
+                block content

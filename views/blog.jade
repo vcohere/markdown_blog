@@ -1,0 +1,6 @@
+extends ./layout.jade
+
+block content
+    ul
+        each article in articles
+            a(href='/blog/#{article.file}'): li= article.title

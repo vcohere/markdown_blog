@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 70vw;
+    min-height: 100vh;
+    margin: auto;
+    background-color: #f2f2f2;
+}
+
+#head {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    font-family: monospace;
+    border-bottom: 1px solid #424242;
+}
+
+#head .logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 26px;
+}
+
+#head .nav {
+    position: absolute;
+    list-style-type: none;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+#head .nav li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#body {
+    width: 100%;
+    padding: 20px;
+}
