@@ -2,16 +2,33 @@ doctype html
 html(lang='fr')
     head
         title Valentin Cohéré
-        link(rel='stylesheet' href='/css/style.css')
+        link(rel='stylesheet', href='/fontawesome/css/font-awesome.min.css')
+        link(rel='stylesheet', href='/css/style.css')
     body
         #container
-            #head
-                .logo
-                    | VC
-                ul.nav
-                    li: a(href='/') Accueil
-                    li: a(href='/blog') Blog
-                    li: a(href='/projects') Projets
-                    li: a(href='/contact') Contact
+            .head_wrap
+                #header
+                    img(src='/img/logo_medium.png', alt='logo', class='logo')
+                #menu
+                    if page == 'index'
+                        a(href='/').active Accueil
+                    else
+                        a(href='/') Accueil
+                    if page == 'blog' 
+                        a(href='/blog').active Blog
+                    else
+                        a(href='/blog') Blog
+                    a(href='/projects') Projets
+                    a(href='/contact') Contact
             #body
                 block content
+            #social-wrap
+                .social: a(href='https://github.com/vcohere', target='_blank'): span.fa.fa-github-alt.fa-3x.github
+                .social: a(href='https://fr.linkedin.com/in/valentincohere', target='_blank'): span.fa.fa-linkedin.fa-3x.linkedin
+                .social: span.fa.fa-envelope-o.fa-3x.mail
+            .mail_cover.one
+            .mail_cover.two
+                | contact@vcohe.re
+                span.fa.fa-close.close
+        script(src='/js/jquery.js')
+        script(src='/js/front.js')

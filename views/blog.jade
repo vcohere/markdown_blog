@@ -3,4 +3,6 @@ extends ./layout.jade
 block content
     ul
         each article in articles
-            a(href='/blog/#{article.file}'): li= article.title
+            a(href='/blog/#{article.file}'): li
+				| #{article.title}
+				| span.date: #{article.date} - #{article.hour}

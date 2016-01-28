@@ -1,5 +1,5 @@
-An h1 header
-============
+Test 2
+======
 
 Paragraphs are separated by a blank line.
 
